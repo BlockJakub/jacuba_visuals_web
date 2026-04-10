@@ -1,0 +1,67 @@
+@use '../abstracts/variables' as *;
+
+.reviews-main {
+    background-color: $color-bg;
+}
+
+.reviews-page-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.reviews-page-card {
+    padding: 2.6rem;
+    border: 1px solid $color-border;
+    border-radius: $radius-large;
+    background-color: $color-surface;
+    box-shadow: $shadow-soft;
+}
+
+.reviews-page-card__label {
+    margin-bottom: 1rem;
+    color: $color-primary;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.reviews-page-card__title {
+    margin-bottom: 1.2rem;
+    overflow-wrap: break-word;
+}
+
+.reviews-page-card__text {
+    margin-bottom: 0;
+    color: $color-text-muted;
+    overflow-wrap: break-word;
+}
+
+.reviews-page-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .reviews-page-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .reviews-page-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.reviews-page-actions {
+    justify-content: flex-start;
+}
+
+@media (min-width: 768px) {
+    .reviews-page-actions {
+        justify-content: flex-start;
+    }
+}

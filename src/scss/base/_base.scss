@@ -1,0 +1,48 @@
+@use '../abstracts/variables' as *;
+
+body {
+    margin: 0;
+    background-color: $color-bg;
+    color: $color-text;
+    font-family: $font-primary;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+a,
+li {
+    overflow-wrap: break-word;
+}
+
+main {
+    display: block;
+}
+
+section {
+    padding: $section-spacing-mobile 0;
+}
+
+@media (min-width: 768px) {
+    section {
+        padding: $section-spacing-desktop 0;
+    }
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid $color-primary;
+    outline-offset: 0.2rem;
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}

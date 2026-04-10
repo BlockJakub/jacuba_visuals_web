@@ -1,0 +1,241 @@
+Dobře. Jdeme přesně jen na Hero sekci.
+
+Krok 6 — obsahový plán pro Hero
+
+Hero musí udělat jednu věc:
+během pár sekund vysvětlit, co nabízíš, komu to pomáhá a co má člověk udělat dál.
+
+Ne umění. Ne chaos. Ne moc textu.
+
+6.1 Co má Hero obsahovat
+
+Hero pro tvůj web má mít 5 částí:
+
+eyebrow / malý úvodní řádek
+H1
+supporting paragraph
+2 CTA tlačítka
+vizuální pravou stranu nebo proof box
+6.2 Doporučená struktura
+A. Eyebrow
+
+Malý řádek nad H1.
+
+Příklad:
+
+Web Development for Small Businesses in Scotland
+
+Tohle je dobré, protože:
+
+rychle určí obor
+naznačí cílovku
+nepřekáží H1
+B. H1
+
+H1 musí být silný, čistý, bez zbytečné omáčky.
+
+Tvoje H1 by měla říkat:
+
+co děláš
+jakou má klient výhodu
+
+Doporučuji tuto verzi: Professional Websites for Small Businesses That Need a Stronger Online Presence
+
+Tohle je lepší než jen:
+
+Best Web Development in Leven
+
+protože:
+
+nezní to lacině
+není to přehnané tvrzení
+mluví to jazykem hodnoty
+Lokaci dáme spíš do supporting textu nebo title tagu
+
+To je často chytřejší než rvát všechno do H1.
+
+C. Supporting paragraph
+
+Musí odpovědět:
+
+co stavíš
+jaké jsou vlastnosti
+komu to slouží
+
+Doporučený text: I build fast, responsive and SEO-friendly websites that help small businesses look professional, load quickly and present their services clearly online.
+
+Tohle je dobré, protože obsahuje:
+
+fast
+responsive
+SEO-friendly
+professional
+services clearly online
+
+To už je silný základ pro homepage messaging.
+
+D. CTA tlačítka
+
+Musí být dvě.
+
+Primární:
+Get in Touch
+Sekundární:
+View Portfolio
+
+Tohle je správné, protože:
+
+jeden button je obchodní
+druhý button je důkaz práce
+
+Nepoužívej teď:
+
+Learn More
+Discover
+Explore Magic
+něco neurčitého
+
+Musí to být přímé.
+
+E. Pravá strana hero
+
+Máš 3 možnosti:
+
+Možnost 1 — čistý image/visual block
+
+Například:
+
+mockup laptopu
+screenshot webu
+branded visual
+Možnost 2 — proof card
+
+To se mi pro tebe líbí víc.
+
+Například box s textem:
+
+Fast loading
+Responsive design
+SEO-friendly structure
+Clean front-end code
+Možnost 3 — featured project preview
+
+Malý card preview s jedním projektem
+
+Můj verdikt pro tebe
+Nejlepší bude Možnost 2 — proof card
+
+Protože:
+
+ještě možná nemáš hotové všechny vizuály
+proof card je rychlá
+vypadá profesionálně
+prodává kvalitu hned nahoře
+6.3 Finální doporučený Hero copy
+
+Tady máš první profesionální verzi:
+
+Eyebrow
+Web Development for Small Businesses in Scotland
+
+H1
+Professional Websites for Small Businesses That Need a Stronger Online Presence
+
+Paragraph
+I build fast, responsive and SEO-friendly websites that help small businesses look professional, load quickly and present their services clearly online.
+
+Primary CTA
+Get in Touch
+Secondary CTA
+View Portfolio
+Proof list
+Fast loading pages
+Responsive on all devices
+SEO-friendly structure
+Clean and maintainable code
+6.4 SEO poznámka
+
+Hero není celé SEO, ale pomáhá.
+
+Tento obsah už přirozeně obsahuje témata jako:
+
+web development
+small businesses
+responsive
+SEO-friendly
+websites
+online presence
+
+To je správně.
+Ne přecpané. Ne robotické.
+
+6.5 Co bych zatím do Hero nedával
+
+Teď tam ještě nedávej:
+
+opening hours
+write a review button
+příliš mnoho skill icons
+dlouhé odstavce
+moc lokalit najednou
+všechny služby naráz
+
+Hero má být úderný, ne přeplněný.
+
+
+6.6 Doporučené HTML rozložení hero
+
+Ještě ne finální celý kód stránky, jen logika:
+<section class="hero">
+  <div class="container">
+    <div class="hero__inner">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Web Development for Small Businesses in Scotland</p>
+        <h1 class="hero__title">
+          Professional Websites for Small Businesses That Need a Stronger Online Presence
+        </h1>
+        <p class="hero__text">
+          I build fast, responsive and SEO-friendly websites that help small businesses look professional, load quickly and present their services clearly online.
+        </p>
+
+        <div class="hero__actions">
+          <a href="contact.html" class="button button--primary">Get in Touch</a>
+          <a href="portfolio.html" class="button button--secondary">View Portfolio</a>
+        </div>
+      </div>
+
+      <div class="hero__proof">
+        <ul class="hero__proof-list" role="list">
+          <li class="hero__proof-item">Fast loading pages</li>
+          <li class="hero__proof-item">Responsive on all devices</li>
+          <li class="hero__proof-item">SEO-friendly structure</li>
+          <li class="hero__proof-item">Clean and maintainable code</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+Tohle je už velmi slušná konstrukce.
+
+Můj profesionální názor na wording
+
+Ještě silnější je být střízlivý než přehnaně marketingový.
+
+Proto radši:
+
+professional
+fast
+responsive
+SEO-friendly
+clear online presence
+
+a ne:
+
+best in Scotland
+world class
+elite
+number one
+
+Tohle působí lacině, hlavně bez velkých referencí.

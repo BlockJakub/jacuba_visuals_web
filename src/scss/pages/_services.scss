@@ -1,0 +1,119 @@
+@use '../abstracts/variables' as *;
+
+
+
+.services-main {
+    background-color: $color-bg;
+}
+
+
+
+.services-detail-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.services-detail-card {
+    padding: 2.6rem;
+    border: 1px solid $color-border;
+    border-radius: $radius-large;
+    background-color: $color-surface;
+    box-shadow: $shadow-soft;
+}
+
+.services-detail-card__label {
+    margin-bottom: 1rem;
+    color: $color-primary;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.services-detail-card__title {
+    margin-bottom: 1.2rem;
+    overflow-wrap: break-word;
+}
+
+.services-detail-card__text {
+    margin-bottom: 1.8rem;
+    color: $color-text-muted;
+}
+
+.services-detail-card__list {
+    display: grid;
+    gap: 1rem;
+}
+
+.services-detail-card__list li {
+    position: relative;
+    padding-left: 2rem;
+    color: $color-text;
+}
+
+.services-detail-card__list li::before {
+    content: '';
+    position: absolute;
+    top: 0.9rem;
+    left: 0;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background-color: $color-primary;
+}
+
+@media (min-width: 768px) {
+    .services-detail-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.services-process {
+    background-color: $color-surface;
+}
+
+.process-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.process-card {
+    padding: 2.6rem;
+    border: 1px solid $color-border;
+    border-radius: $radius-large;
+    background-color: $color-bg;
+    box-shadow: $shadow-soft;
+}
+
+.process-card__step {
+    margin-bottom: 1rem;
+    color: $color-primary;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.process-card__title {
+    margin-bottom: 1rem;
+}
+
+.process-card__text {
+    margin-bottom: 0;
+    color: $color-text-muted;
+}
+
+@media (min-width: 768px) {
+    .process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.services-cta {
+    background-color: $color-bg;
+}
+
+.services-detail-card__text,
+.process-card__text,
+.services-detail-card__list li {
+    overflow-wrap: break-word;
+}

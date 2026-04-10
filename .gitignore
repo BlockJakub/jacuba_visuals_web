@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
+*.env
+*.local
+*.sublime*
+*.idea/
+*.iml
+npm-debug.log*
+package-lock.json
+/.sass-cache/
+src/assets/images/originals/

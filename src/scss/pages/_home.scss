@@ -1,0 +1,25 @@
+@use '../abstracts/variables' as *;
+
+.value-section {
+    padding-top: 0;
+}
+
+.services-preview {
+    background-color: $color-bg;
+}
+
+.projects-preview {
+    background-color: $color-surface;
+}
+
+.reviews-preview {
+    background-color: $color-bg;
+}
+
+.about-preview {
+    background-color: $color-surface;
+}
+
+.final-cta {
+    background-color: $color-bg;
+}

@@ -1,0 +1,44 @@
+@use '../abstracts/variables' as *;
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.15;
+    font-weight: 700;
+    color: $color-black;
+}
+
+h1 {
+    font-size: 3.6rem;
+    margin-bottom: 1.6rem;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 1.4rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+}
+
+p {
+    margin-bottom: 1.6rem;
+    color: $color-text;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 5.2rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 2.6rem;
+    }
+}

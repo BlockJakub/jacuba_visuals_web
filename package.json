@@ -1,0 +1,36 @@
+{
+  "name": "jacubavisualsweb",
+  "version": "1.0.0",
+  "description": "Jacuba Visuals Web website - A project from Jacob Janecek - Jacuba Visuals Web.",
+  "private": true,
+  "scripts": {
+    "sass:watch": "sass --watch src/scss/main.scss:dist/css/style.css",
+    "sass:build": "sass src/scss/main.scss dist/css/style.css --style compressed",
+    "prefix:css": "postcss dist/css/style.css --use autoprefixer -o dist/css/style.css",
+    "build:css": "npm-run-all sass:build prefix:css",
+    "devserver": "live-server src --browser=chrome",
+    "start": "npm-run-all --parallel devserver sass:watch",
+    "build": "npm-run-all build:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "#"
+  },
+  "keywords": [
+    "web development",
+    "portfolio",
+    "sass",
+    "scss",
+    "html",
+    "javascript",
+    "seo"
+  ],
+  "author": "Jacob Janecek | jacubavisualsweb@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.85.1"
+  }
+}

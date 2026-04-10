@@ -1,0 +1,13 @@
+@use '../abstracts/variables' as *;
+
+.site-footer {
+    padding: 3rem 0;
+    background-color: $color-surface;
+    border-top: 1px solid $color-border;
+}
+
+.site-footer p {
+    margin-bottom: 0;
+    font-size: 1.4rem;
+    color: $color-text-muted;
+}

@@ -1,0 +1,31 @@
+@use '../abstracts/variables' as *;
+
+.section-heading {
+    max-width: 72rem;
+    margin-bottom: 3.2rem;
+}
+
+.section-heading__eyebrow {
+    margin-bottom: 1rem;
+    color: $color-primary;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.section-heading__title {
+    margin-bottom: 1.2rem;
+}
+
+.section-heading__text {
+    margin-bottom: 0;
+    color: $color-text-muted;
+    font-size: 1.8rem;
+}
+
+@media (min-width: 768px) {
+    .section-heading {
+        margin-bottom: 4rem;
+    }
+}

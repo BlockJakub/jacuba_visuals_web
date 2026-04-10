@@ -1,0 +1,96 @@
+@use '../abstracts/variables' as *;
+
+.value-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.value-card {
+    padding: 2.4rem;
+    border: 1px solid $color-border;
+    border-radius: $radius-large;
+    background-color: $color-surface;
+    box-shadow: $shadow-soft;
+}
+
+.value-card__title {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.value-card__text {
+    margin-bottom: 0;
+    color: $color-text-muted;
+}
+
+@media (min-width: 768px) {
+    .value-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .value-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+
+
+.services-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.service-card {
+    padding: 2.6rem;
+    border: 1px solid $color-border;
+    border-radius: $radius-large;
+    background-color: $color-surface;
+    box-shadow: $shadow-soft;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.service-card__title {
+    font-size: 2rem;
+}
+
+.value-card__title,
+.service-card__title {
+    overflow-wrap: break-word;
+}
+
+.service-card__text {
+    margin-bottom: 0;
+    color: $color-text-muted;
+}
+
+.service-card__link {
+    margin-top: auto;
+    font-weight: 700;
+    color: $color-primary;
+    transition: color $transition-default;
+}
+
+.service-card__link:hover,
+.service-card__link:focus-visible {
+    color: $color-primary-hover;
+}
+
+.services-preview__cta {
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}

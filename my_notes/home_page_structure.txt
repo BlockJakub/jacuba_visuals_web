@@ -1,0 +1,235 @@
+Dobře. Teď už přestáváme stavět kostru a začneme řešit logiku homepage.
+
+Krok 5 — architektura Home page
+
+Domovská stránka nesmí být jen hezká. Musí prodávat.
+To znamená, že každá sekce má mít jasný úkol.
+
+Pro tvůj business doporučuji toto pořadí:
+
+Pořadí sekcí na Home
+Hero
+Trust / value section
+Services preview
+Featured projects
+Testimonials / reviews preview
+About preview
+Final call to action
+
+To je dobré, protože návštěvník jde tímto pořadím:
+
+kdo jsi
+co děláš
+proč ti věřit
+co jsi udělal
+co o tobě říkají
+jak tě kontaktovat
+5.1 Hero
+
+To je první úder. Musí být silný a čistý.
+
+Má obsahovat:
+H1
+krátký supporting text
+1 hlavní CTA
+1 vedlejší CTA
+Příklad logiky:
+H1: co děláš + lokalita / hodnota
+text: pro koho to je a proč je to užitečné
+CTA 1: Contact Me
+CTA 2: View Portfolio
+Cíl:
+
+Do 5 sekund musí být jasné:
+
+že děláš web development
+že to je pro small businesses
+že weby jsou fast, responsive, structured
+5.2 Trust / value section
+
+Tady návštěvníkovi řekneš, proč nejsi jen další člověk s laptopem.
+
+Doporučené 3 nebo 4 body:
+Responsive design
+SEO-friendly structure
+Fast loading pages
+Clean and maintainable code
+Cíl:
+
+Rychle ukázat profesionální standard.
+
+5.3 Services preview
+
+Ne celé Services page, jen výběr.
+
+Doporučuji 3 karty:
+Business Websites
+Landing Pages
+Website Improvements
+
+Později můžeš přidat:
+
+restaurant websites
+redesigns
+portfolio websites
+front-end development support
+Cíl:
+
+Návštěvník musí pochopit, co si u tebe může koupit.
+
+5.4 Featured projects
+
+Tady se láme důvěra.
+
+Má obsahovat:
+2 nebo 3 vybrané projekty
+obrázek
+název
+krátký popis
+použitá technologie
+link na Portfolio page
+Cíl:
+
+Ukázat skutečný důkaz práce.
+
+I kdyby projekty byly vlastní, pořád je ukážeš jako:
+
+concept project
+practice build
+real structure example
+
+Ale popis musí být poctivý.
+
+5.5 Testimonials / reviews preview
+
+Tady ještě nemusíš mít deset recenzí.
+
+Můžeš začít takto:
+2 krátké testimonials
+tlačítko: Leave a Review
+link na Google Business review
+Důležité:
+
+Dokud nemáš reálné klientské recenze, nepiš lživé reference.
+Můžeš zatím použít:
+
+feedback from collaborators
+early feedback
+placeholder section ready for real reviews
+Cíl:
+
+Budovat social proof.
+
+5.6 About preview
+
+Krátký blok o tobě.
+
+Obsah:
+kdo jsi
+co stavíš
+jak přemýšlíš o webech
+proč děláš structured websites, not chaos
+Cíl:
+
+Business působí osobněji a důvěryhodněji.
+
+5.7 Final CTA
+
+Na konci stránky musí být jasný další krok.
+
+Například:
+Need a faster and more professional website?
+Let’s build a website that works for your business.
+
+Tlačítko:
+
+Get in Touch
+Request a Quote
+Cíl:
+
+Uzavřít stránku obchodně.
+
+Co na Home page nedávat hned teď
+
+Aby se stránka nerozpadla do chaosu, zatím tam nedávej:
+
+opening hours
+příliš mnoho externích linků
+dlouhý příběh o sobě
+příliš mnoho skill badges
+velký technický slang
+přehnaně dlouhé texty
+Opening hours
+
+To dává větší smysl pro restauraci nebo fyzický podnik.
+Pro web development business to není hlavní priorita.
+
+Místo toho je lepší:
+
+response time
+availability text
+contact expectation
+
+Například později:
+
+Replies within 24–48 hours
+
+To je praktičtější než klasické opening hours.
+
+Skills — kam s nimi?
+
+Ano, skills tam patří. Ale ne jako obří samostatná nudná stěna log.
+
+Lepší řešení:
+
+Skills zapracovat do:
+
+About preview
+Services page
+Portfolio cards
+
+Například:
+
+HTML5
+SCSS
+JavaScript
+responsive development
+semantic structure
+SEO-friendly builds
+Můj názor:
+
+Na Home page dej jen malý blok nebo krátký řádek.
+Plný skills section bych nechal až když bude opravdu dobře udělaný.
+
+Portfolio web zvlášť?
+
+Pořád platí: ne.
+
+Uděláš:
+
+jeden business web
+portfolio jako jedna stránka nebo sekce v něm
+
+To je lepší pro:
+
+SEO
+důvěru
+správu obsahu
+branding
+
+Dva weby by ti jen rozbily energii a pořádek.
+
+Profesionální Home structure
+
+Takto bych to zapsal jako pracovní osnovu:
+
+Home
+├── Hero
+├── Value points
+├── Services preview
+├── Featured projects
+├── Reviews preview
+├── About preview
+└── Final CTA
+
+To je čisté, tradiční a účinné.

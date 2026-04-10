@@ -1,0 +1,86 @@
+@use '../abstracts/variables' as *;
+
+.contact-main {
+    background-color: $color-bg;
+}
+
+.contact-grid {
+    display: grid;
+    gap: 3.2rem;
+}
+
+.contact-info {
+    display: grid;
+    gap: 1.6rem;
+}
+
+.contact-info__card {
+    padding: 2.4rem;
+    border: 1px solid $color-border;
+    border-radius: $radius-large;
+    background-color: $color-surface;
+    box-shadow: $shadow-soft;
+}
+
+.contact-info__label {
+    margin-bottom: 1rem;
+    color: $color-primary;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.contact-info__text {
+    margin-bottom: 0;
+    color: $color-text-muted;
+    overflow-wrap: break-word;
+}
+
+.contact-form {
+    padding: 2.4rem;
+    border: 1px solid $color-border;
+    border-radius: $radius-large;
+    background-color: $color-surface;
+    box-shadow: $shadow-soft;
+}
+
+.contact-form__field {
+    display: grid;
+    gap: 0.8rem;
+    margin-bottom: 1.8rem;
+}
+
+.contact-form__label {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: $color-text;
+}
+
+.contact-form__input,
+.contact-form__textarea {
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    border: 1px solid $color-border;
+    border-radius: $radius-medium;
+    background-color: $color-white;
+    color: $color-text;
+}
+
+.contact-form__input:focus,
+.contact-form__textarea:focus {
+    outline: 2px solid $color-primary;
+    outline-offset: 0.2rem;
+}
+
+.contact-form__textarea {
+    resize: vertical;
+    min-height: 14rem;
+}
+
+@media (min-width: 1024px) {
+    .contact-grid {
+        grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+        align-items: start;
+    }
+}

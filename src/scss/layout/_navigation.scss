@@ -1,0 +1,40 @@
+@use '../abstracts/variables' as *;
+
+.site-nav {
+    width: 100%;
+}
+
+.site-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem 1.6rem;
+    align-items: center;
+}
+
+.site-nav__link {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: $color-text;
+    transition: color $transition-default;
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus-visible {
+    color: $color-primary;
+}
+
+@media (min-width: 768px) {
+    .site-nav {
+        width: auto;
+    }
+
+    .site-nav__list {
+        flex-wrap: nowrap;
+        gap: 2rem;
+    }
+}
+
+.site-nav__link[aria-current='page'] {
+    color: $color-primary;
+    font-weight: 700;
+}
