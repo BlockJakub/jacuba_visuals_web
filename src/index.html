@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Web Development in Leven | Jacuba Visuals Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
     <meta name="description"
         content="Professional web development services in Leven. Fast, responsive and SEO-friendly websites for small businesses." />
     <meta name="keywords"
@@ -15,15 +19,15 @@
     <meta property="og:title" content="Jacuba Visuals Web" />
     <meta property="og:description" content="Professional web development services in Leven for small businesses." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://your-domain-example.com" />
-    <meta property="og:image" content="https://your-domain-example.com/assets/images/og-image.jpg" />
+    <meta property="og:url" content="https://blockjakub.github.io/jacuba_visuals_web/src/index.html" />
+    <meta property="og:image" content="assets\images\og-image-jacuba.jpg" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Jacuba Visuals Web" />
     <meta name="twitter:description" content="Professional web development services in Leven for small businesses." />
     <meta name="twitter:image" content="https://your-domain-example.com/assets/images/og-image.jpg" />
 
-    <link rel="icon" href="assets/favicons/jacubavisualsweb.ico" />
+    <link rel="icon" href="assets/favicons/favicon-jacubavisualsweb.svg" />
     <link rel="stylesheet" href="../dist/css/style.css" />
 </head>
 
@@ -31,7 +35,10 @@
     <header class="site-header">
         <div class="container">
             <div class="site-header__inner">
-                <a class="site-header__logo" href="index.html">Jacuba Visuals Web</a>
+                <a class="site-header__logo" href="index.html">
+                    <img src="assets/images/Logo-jacubavisualsweb.svg" alt="Jacuba Visuals Web logo" width="220"
+                        height="60" />
+                </a>
 
                 <nav class="site-nav" aria-label="Main navigation">
                     <ul class="site-nav__list" role="list">
@@ -236,13 +243,30 @@ I kdyby některé projekty byly vlastní nebo koncepty, pořád je můžeš pou�
 
                 <div class="projects-grid">
                     <article class="project-card">
+                        <picture class="project-card__media">
+                            <source media="(max-width: 430px)" srcset="
+                            assets/images/work-examples/restaurant-project/mobile/restaurant-mobile-375.webp 375w,
+                            assets/images/work-examples/restaurant-project/mobile/restaurant-mobile-640.webp 640w
+                        " sizes="100vw" type="image/webp" />
+
+                            <source media="(min-width: 431px)" srcset="
+                            assets/images/work-examples/restaurant-project/tablet/restaurant-tablet-768.webp 768w,
+                            assets/images/work-examples/restaurant-project/tablet/restaurant-tablet-960.webp 960w,
+                            assets/images/work-examples/restaurant-project/desktop/restaurant-desktop-1200.webp 1200w,
+                            assets/images/work-examples/restaurant-project/desktop/restaurant-desktop-1440.webp 1440w
+                        " sizes="(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 33vw" type="image/webp" />
+
+                            <img class="project-card__image"
+                                src="assets/images/work-examples/restaurant-project/desktop/restaurant-desktop-1200.webp"
+                                alt="Restaurant website project preview" loading="lazy" width="1200" height="675" />
+                        </picture>
+
                         <div class="project-card__content">
                             <p class="project-card__label">Restaurant Website Concept</p>
                             <h3 class="project-card__title">Restaurant Ordering and Booking Interface</h3>
                             <p class="project-card__text">
                                 A structured restaurant-focused website concept with service presentation, ordering flow
-                                thinking
-                                and responsive layout planning.
+                                thinking and responsive layout planning.
                             </p>
                             <p class="project-card__tech">HTML5 · SCSS · JavaScript</p>
                             <a href="portfolio.html" class="project-card__link">View project details</a>
@@ -250,6 +274,24 @@ I kdyby některé projekty byly vlastní nebo koncepty, pořád je můžeš pou�
                     </article>
 
                     <article class="project-card">
+                        <picture class="project-card__media">
+                            <source media="(max-width: 430px)" srcset="
+                            assets/images/work-examples/portfolio-project/mobile/portfolio-mobile-375.webp 375w,
+                            assets/images/work-examples/portfolio-project/mobile/portfolio-mobile-640.webp 640w
+                        " sizes="100vw" type="image/webp" />
+
+                            <source media="(min-width: 431px)" srcset="
+                            assets/images/work-examples/portfolio-project/tablet/portfolio-tablet-768.webp 768w,
+                            assets/images/work-examples/portfolio-project/tablet/portfolio-tablet-960.webp 960w,
+                            assets/images/work-examples/portfolio-project/desktop/portfolio-desktop-1200.webp 1200w,
+                            assets/images/work-examples/portfolio-project/desktop/portfolio-desktop-1440.webp 1440w
+                        " sizes="(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 33vw" type="image/webp" />
+
+                            <img class="project-card__image"
+                                src="assets/images/work-examples/portfolio-project/desktop/portfolio-desktop-1200.webp"
+                                alt="Portfolio website project preview" loading="lazy" width="1200" height="675" />
+                        </picture>
+
                         <div class="project-card__content">
                             <p class="project-card__label">Portfolio / Business Build</p>
                             <h3 class="project-card__title">Personal Brand and Services Website</h3>
@@ -263,13 +305,30 @@ I kdyby některé projekty byly vlastní nebo koncepty, pořád je můžeš pou�
                     </article>
 
                     <article class="project-card">
+                        <picture class="project-card__media">
+                            <source media="(max-width: 430px)" srcset="
+                            assets/images/work-examples/property-project/mobile/property-mobile-375.webp 375w,
+                            assets/images/work-examples/property-project/mobile/property-mobile-640.webp 640w
+                        " sizes="100vw" type="image/webp" />
+
+                            <source media="(min-width: 431px)" srcset="
+                            assets/images/work-examples/property-project/tablet/property-tablet-768.webp 768w,
+                            assets/images/work-examples/property-project/tablet/property-tablet-960.webp 960w,
+                            assets/images/work-examples/property-project/desktop/property-desktop-1200.webp 1200w,
+                            assets/images/work-examples/property-project/desktop/property-desktop-1440.webp 1440w
+                        " sizes="(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 33vw" type="image/webp" />
+
+                            <img class="project-card__image"
+                                src="assets/images/work-examples/property-project/desktop/property-desktop-1200.webp"
+                                alt="Property website project preview" loading="lazy" width="1200" height="675" />
+                        </picture>
+
                         <div class="project-card__content">
                             <p class="project-card__label">Property Website Concept</p>
                             <h3 class="project-card__title">Real Estate Listing Structure</h3>
                             <p class="project-card__text">
                                 A property website concept focused on layout clarity, content structure and presenting
-                                listings in
-                                a more professional way.
+                                listings in a more professional way.
                             </p>
                             <p class="project-card__tech">HTML5 · SCSS · JavaScript · PHP Concept Planning</p>
                             <a href="portfolio.html" class="project-card__link">View project details</a>
@@ -332,8 +391,7 @@ Proto ji postavíme tak, aby fungovala už teď, i když ještě nemáš hromadu
                 </div>
 
                 <div class="reviews-preview__actions">
-                    <!-- !!!!!!!!!!!!!!!!  Replace with real Google Business review link !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-                    <a class="button button--primary" href="https://google.com" target="_blank"
+                    <a class="button button--primary" href="https://g.page/r/CcVXXO_JLMIPEAE/review" target="_blank"
                         rel="noopener noreferrer">
                         Write a Review
                     </a>
@@ -448,6 +506,32 @@ Proto ji postavíme tak, aby fungovala už teď, i když ještě nemáš hromadu
     <footer class="site-footer">
         <div class="container">
             <p>&copy; 2026 Jacuba Visuals Web. All rights reserved.</p>
+
+            <!--  socials -->
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61576975049703" target="_blank" rel="noopener"
+                    aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.youtube.com/@jjcodenet_media" target="_blank" rel="noopener" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/jakub-janecek-27b335310" target="_blank" rel="noopener"
+                    aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <a href="https://github.com/BlockJakub" target="_blank" rel="noopener" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://share.google/G5OgSHHPZWS6N9Q5q" target="_blank" rel="noopener"
+                    aria-label="Google Business">
+                    <i class="fab fa-google"></i>
+                </a>
+            </div>
         </div>
     </footer>
 </body>

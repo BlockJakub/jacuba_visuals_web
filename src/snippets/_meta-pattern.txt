@@ -1,0 +1,14 @@
+<title>Page Title | Jacuba Visuals Web</title>
+<meta name="description" content="Short unique description for this page." />
+<meta name="author" content="Jacob Janecek" />
+
+<meta property="og:title" content="Page Title | Jacuba Visuals Web" />
+<meta property="og:description" content="Short unique description for this page." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://your-domain-example.com/page.html" />
+<meta property="og:image" content="https://your-domain-example.com/assets/images/og-image.jpg" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Page Title | Jacuba Visuals Web" />
+<meta name="twitter:description" content="Short unique description for this page." />
+<meta name="twitter:image" content="https://your-domain-example.com/assets/images/og-image.jpg" />

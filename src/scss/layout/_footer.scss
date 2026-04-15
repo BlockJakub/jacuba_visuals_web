@@ -4,10 +4,55 @@
     padding: 3rem 0;
     background-color: $color-surface;
     border-top: 1px solid $color-border;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    p {
+        margin-bottom: 0;
+        font-size: 1.4rem;
+        color: $color-text-muted;
+    }
 }
 
-.site-footer p {
-    margin-bottom: 0;
-    font-size: 1.4rem;
-    color: $color-text-muted;
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    a {
+        color: $color-text; // Změna z bílé na viditelnou barvu
+        font-size: 1.6rem;
+        transition: $transition;
+        display: inline-block;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+        // Selektory musí přesně odpovídat aria-label v HTML
+        &[aria-label="Facebook"]:hover {
+            color: #1877f2;
+        }
+
+        &[aria-label="YouTube"]:hover {
+            color: #ff0000;
+        }
+
+        &[aria-label="LinkedIn"]:hover {
+            color: #0a66c2;
+        }
+
+        &[aria-label="GitHub"]:hover {
+            color: #333333;
+        }
+
+        &[aria-label="Google Business"]:hover {
+            color: #4285f4;
+        }
+    }
 }

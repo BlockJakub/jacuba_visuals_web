@@ -1,0 +1,8 @@
+========================================================================
+ME OTAZKY A NAPADY A CO AJ JAK JESTE UDELAT VYLEPSIT
+========================================================================
+
+
+1. Mam pak vsechny images paths zmenit na links az to bude cele an github??
+
+2.

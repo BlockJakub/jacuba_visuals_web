@@ -57,3 +57,17 @@
 .portfolio-item__meta {
     overflow-wrap: break-word;
 }
+
+
+
+.portfolio-item {
+    overflow: hidden;
+}
+
+.portfolio-item__image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-bottom: 1px solid $color-border;
+}
