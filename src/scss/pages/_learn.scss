@@ -1,0 +1,25 @@
+@use '../abstracts/variables' as *;
+
+.learn-page {
+    padding: 4rem 0 8rem;
+    background-color: $color-surface;
+
+    &__infographic {
+        padding: 0;
+    }
+
+    &__image-wrap {
+        margin: 0;
+        border: 1px solid $color-border;
+        border-radius: $radius-large;
+        overflow: hidden;
+        background-color: $color-surface;
+        box-shadow: $shadow-soft;
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}

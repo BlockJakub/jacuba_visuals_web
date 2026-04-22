@@ -35,12 +35,22 @@
     <header class="site-header">
         <div class="container">
             <div class="site-header__inner">
-                <a class="site-header__logo" href="index.html">Jacuba Visuals Web</a>
+                <a class="site-header__logo" href="index.html">
+                    <img src="assets/images/Logo-jacubavisualsweb.svg" alt="Jacuba Visuals Web logo" width="220"
+                        height="60" />
+                </a>
 
-                <nav class="site-nav" aria-label="Main navigation">
+                <button class="site-nav-toggle" aria-label="Open navigation" aria-controls="main-nav"
+                    aria-expanded="false">
+                    <span class="site-nav-toggle__bar"></span>
+                    <span class="site-nav-toggle__bar"></span>
+                    <span class="site-nav-toggle__bar"></span>
+                </button>
+
+                <nav class="site-nav" id="main-nav" aria-label="Main navigation">
                     <ul class="site-nav__list" role="list">
                         <li class="site-nav__item">
-                            <a class="site-nav__link" href="index.html">Home</a>
+                            <a class="site-nav__link" href="index.html" aria-current="page">Home</a>
                         </li>
                         <li class="site-nav__item">
                             <a class="site-nav__link" href="services.html">Services</a>
@@ -55,7 +65,10 @@
                             <a class="site-nav__link" href="about.html">About</a>
                         </li>
                         <li class="site-nav__item">
-                            <a class="site-nav__link" href="contact.html" aria-current="page">Contact</a>
+                            <a class="site-nav__link" href="learn.html">Learn</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -180,6 +193,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/nav-toggle.js"></script>
 </body>
 
 </html>

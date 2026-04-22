@@ -1,0 +1,41 @@
+@use '../abstracts/variables' as *;
+
+// General grid utility classes
+
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid--3-cols {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid--4-cols {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+// Responsive grids
+@media (min-width: 768px) {
+    .grid--tablet-2-cols {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .grid--tablet-3-cols {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid--desktop-3-cols {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .grid--desktop-4-cols {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}

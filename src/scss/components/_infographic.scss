@@ -1,0 +1,249 @@
+// components/_infographic.scss
+@use '../abstracts/variables' as *;
+
+.infographic {
+    padding: 6rem 0;
+    background-color: $color-surface;
+
+    &__header {
+        max-width: 72rem;
+        margin-bottom: 3.2rem;
+    }
+
+    &__eyebrow {
+        margin-bottom: 1rem;
+        color: $color-primary;
+        font-size: 1.4rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        margin-bottom: 1.2rem;
+        overflow-wrap: break-word;
+    }
+
+    &__text {
+        margin-bottom: 0;
+        color: $color-text-muted;
+        font-size: 1.8rem;
+    }
+
+    &__layout {
+        display: grid;
+        gap: 2rem;
+    }
+
+    &__main {
+        display: grid;
+        gap: 2rem;
+    }
+
+    &__sidebar {
+        display: grid;
+        gap: 2rem;
+    }
+
+    &__footer {
+        margin-top: 2.4rem;
+    }
+
+    &__note {
+        margin-bottom: 0;
+        color: $color-text-muted;
+        font-size: 1.6rem;
+    }
+}
+
+.infographic-card {
+    padding: 2.4rem;
+    border: 1px solid $color-border;
+    border-radius: $radius-large;
+    background-color: $color-surface;
+    box-shadow: $shadow-soft;
+
+    &__header {
+        margin-bottom: 1.8rem;
+    }
+
+    &__title {
+        margin-bottom: 0;
+        font-size: 2rem;
+        overflow-wrap: break-word;
+    }
+
+    &__content {
+        display: grid;
+        gap: 1.6rem;
+    }
+
+    &__code {
+        margin: 0;
+        padding: 2rem;
+        overflow-x: auto;
+        border-radius: $radius-large;
+        background-color: #0f172a;
+        color: #e5e7eb;
+        font-size: 1.4rem;
+        line-height: 1.7;
+    }
+}
+
+.infographic-diagram {
+    display: grid;
+    gap: 1.6rem;
+    padding: 2rem;
+    border: 1px solid $color-border;
+    border-radius: $radius-large;
+    background-color: #fff;
+
+    &__box {
+        padding: 1.6rem;
+        border-radius: 1.6rem;
+        border: 1px solid $color-border;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    &__box--header {
+        background-color: #dbeafe;
+    }
+
+    &__box--main {
+        display: grid;
+        gap: 1.2rem;
+        background-color: #dcfce7;
+    }
+
+    &__box--footer {
+        background-color: #fce7f3;
+    }
+
+    &__inner {
+        padding: 1.4rem;
+        border: 1px solid $color-border;
+        border-radius: 1.2rem;
+        background-color: #fef3c7;
+    }
+
+    &__inner--article {
+        background-color: #ede9fe;
+    }
+}
+
+.infographic-list {
+    padding: 2.4rem;
+    border: 1px solid $color-border;
+    border-radius: $radius-large;
+    background-color: $color-surface;
+    box-shadow: $shadow-soft;
+
+    &__title {
+        margin-bottom: 1.8rem;
+        font-size: 2rem;
+        overflow-wrap: break-word;
+    }
+
+    &__items {
+        display: grid;
+        gap: 1.6rem;
+    }
+
+    &__item {
+        padding-bottom: 1.6rem;
+        border-bottom: 1px solid $color-border;
+
+        &:last-child {
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+    }
+
+    &__name {
+        margin-bottom: 0.6rem;
+        color: $color-primary;
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+    }
+
+    &__text {
+        margin-bottom: 0;
+        color: $color-text-muted;
+    }
+}
+
+.infographic-benefits {
+    display: grid;
+    gap: 2rem;
+}
+
+.infographic-benefit {
+    padding: 2.4rem;
+    border: 1px solid $color-border;
+    border-radius: $radius-large;
+    background-color: $color-surface;
+    box-shadow: $shadow-soft;
+
+    &__title {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        overflow-wrap: break-word;
+    }
+
+    &__text {
+        margin-bottom: 0;
+        color: $color-text-muted;
+    }
+}
+
+.infographic-tips,
+.infographic-next {
+    padding: 2.4rem;
+    border: 1px solid $color-border;
+    border-radius: $radius-large;
+    background-color: $color-surface;
+    box-shadow: $shadow-soft;
+
+    &__title {
+        margin-bottom: 1.6rem;
+        font-size: 2rem;
+        overflow-wrap: break-word;
+    }
+
+    &__list {
+        display: grid;
+        gap: 1rem;
+        padding-left: 1.8rem;
+        margin: 0;
+    }
+
+    &__item {
+        color: $color-text-muted;
+    }
+}
+
+@media (min-width: 768px) {
+    .infographic {
+        padding: 8rem 0;
+
+        &__header {
+            margin-bottom: 4rem;
+        }
+    }
+
+    .infographic-benefits {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .infographic {
+        &__layout {
+            grid-template-columns: minmax(0, 1.45fr) minmax(28rem, 0.9fr);
+            align-items: start;
+        }
+    }
+}

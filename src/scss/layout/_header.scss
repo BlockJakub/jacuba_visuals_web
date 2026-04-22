@@ -1,5 +1,43 @@
 @use '../abstracts/variables' as *;
 
+// Hamburger menu styles
+.site-nav-toggle {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1002;
+    padding: 0;
+    margin-left: auto;
+}
+
+.site-nav-toggle__bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    margin: 4px 0;
+    background: $color-black;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+.site-nav-toggle--open .site-nav-toggle__bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.site-nav-toggle--open .site-nav-toggle__bar:nth-child(2) {
+    opacity: 0;
+}
+
+.site-nav-toggle--open .site-nav-toggle__bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
 .site-header {
     padding: 2rem 0;
     background-color: $color-surface;

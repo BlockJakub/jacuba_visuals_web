@@ -40,7 +40,14 @@
                         height="60" />
                 </a>
 
-                <nav class="site-nav" aria-label="Main navigation">
+                <button class="site-nav-toggle" aria-label="Open navigation" aria-controls="main-nav"
+                    aria-expanded="false">
+                    <span class="site-nav-toggle__bar"></span>
+                    <span class="site-nav-toggle__bar"></span>
+                    <span class="site-nav-toggle__bar"></span>
+                </button>
+
+                <nav class="site-nav" id="main-nav" aria-label="Main navigation">
                     <ul class="site-nav__list" role="list">
                         <li class="site-nav__item">
                             <a class="site-nav__link" href="index.html" aria-current="page">Home</a>
@@ -56,6 +63,9 @@
                         </li>
                         <li class="site-nav__item">
                             <a class="site-nav__link" href="about.html">About</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="learn.html">Learn</a>
                         </li>
                         <li class="site-nav__item">
                             <a class="site-nav__link" href="contact.html">Contact</a>
@@ -245,19 +255,19 @@ I kdyby některé projekty byly vlastní nebo koncepty, pořád je můžeš pou�
                     <article class="project-card">
                         <picture class="project-card__media">
                             <source media="(max-width: 430px)" srcset="
-                            assets/images/work-examples/restaurant-project/mobile/restaurant-mobile-375.webp 375w,
-                            assets/images/work-examples/restaurant-project/mobile/restaurant-mobile-640.webp 640w
+                            assets/images/work-examples/restaurant-project/mobile/restaurant-main-mobile-320.webp 320w,
+                            assets/images/work-examples/restaurant-project/mobile/restaurant-main-mobile-640.webp 640w
                         " sizes="100vw" type="image/webp" />
 
                             <source media="(min-width: 431px)" srcset="
-                            assets/images/work-examples/restaurant-project/tablet/restaurant-tablet-768.webp 768w,
-                            assets/images/work-examples/restaurant-project/tablet/restaurant-tablet-960.webp 960w,
-                            assets/images/work-examples/restaurant-project/desktop/restaurant-desktop-1200.webp 1200w,
-                            assets/images/work-examples/restaurant-project/desktop/restaurant-desktop-1440.webp 1440w
+                            assets/images/work-examples/restaurant-project/tablet/restaurant-menu-tablet-768.webp 768w,
+                            assets/images/work-examples/restaurant-project/tablet/restaurant-menu-tablet-960.webp 960w,
+                            assets/images/work-examples/restaurant-project/desktop/restaurant-menu-desktop-1200.webp 1200w,
+                            assets/images/work-examples/restaurant-project/desktop/restaurant-menu-desktop-1440.webp 1440w
                         " sizes="(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 33vw" type="image/webp" />
 
                             <img class="project-card__image"
-                                src="assets/images/work-examples/restaurant-project/desktop/restaurant-desktop-1200.webp"
+                                src="assets/images/work-examples/restaurant-project/desktop/restaurant-menu-desktop-1200.webp"
                                 alt="Restaurant website project preview" loading="lazy" width="1200" height="675" />
                         </picture>
 
@@ -534,6 +544,8 @@ Proto ji postavíme tak, aby fungovala už teď, i když ještě nemáš hromadu
             </div>
         </div>
     </footer>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/nav-toggle.js"></script>
 </body>
 
 </html>

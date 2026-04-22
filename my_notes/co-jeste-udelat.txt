@@ -2,7 +2,7 @@
 ME OTAZKY A NAPADY A CO AJ JAK JESTE UDELAT VYLEPSIT
 ========================================================================
 
+1.Proc mam v dist/assets a v nem zadne images? Mam ten folder dist/ upload na github? Protoze mi absolutne nefunguje style v mem projektu na github repository kdyz kliknu na URL te stranky. Na github mam images jen v src/assets/images.
 
-1. Mam pak vsechny images paths zmenit na links az to bude cele an github??
+2. Mam pak vsechny images paths zmenit na links az to bude cele na github (myslim tim images jsou na github src/assets/images ale kdyz mluvime i o dist/ folder) tak co mam delat???
 
-2.

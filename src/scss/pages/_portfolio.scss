@@ -10,37 +10,76 @@
 }
 
 .portfolio-item {
-    padding: 2.6rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
     border: 1px solid $color-border;
     border-radius: $radius-large;
     background-color: $color-surface;
     box-shadow: $shadow-soft;
-}
+    overflow: hidden;
 
-.portfolio-item__label {
-    margin-bottom: 1rem;
-    color: $color-primary;
-    font-size: 1.3rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-}
+    &__media {
+        margin-bottom: 1.8rem;
+        border-radius: 7px;
+    }
 
-.portfolio-item__title {
-    margin-bottom: 1.2rem;
-    overflow-wrap: break-word;
-}
+    &__main {
+        display: block;
+        overflow: hidden;
+        border-radius: 1.2rem;
+        background-color: #fff;
+        aspect-ratio: 16 / 9;
+    }
 
-.portfolio-item__text {
-    margin-bottom: 1.6rem;
-    color: $color-text-muted;
-}
+    &__image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+        transition: transform 0.3s ease;
+    }
 
-.portfolio-item__meta {
-    margin-bottom: 0;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: $color-text;
+    &__label {
+        margin-bottom: 1rem;
+        color: $color-primary;
+        font-size: 1.3rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        margin-bottom: 1.2rem;
+        overflow-wrap: break-word;
+    }
+
+    &__text {
+        margin-bottom: 1.6rem;
+        color: $color-text-muted;
+        overflow-wrap: break-word;
+    }
+
+    &__meta {
+        margin-bottom: 0;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: $color-text;
+        overflow-wrap: break-word;
+    }
+
+    @media (max-width: 430px) {
+        padding: 1.6rem;
+
+        &__main {
+            aspect-ratio: 4 / 5;
+        }
+
+        &__image {
+            object-fit: cover;
+        }
+    }
 }
 
 @media (min-width: 768px) {
@@ -51,23 +90,4 @@
 
 .portfolio-cta {
     background-color: $color-surface;
-}
-
-.portfolio-item__text,
-.portfolio-item__meta {
-    overflow-wrap: break-word;
-}
-
-
-
-.portfolio-item {
-    overflow: hidden;
-}
-
-.portfolio-item__image {
-    display: block;
-    width: 100%;
-    aspect-ratio: 16 / 10;
-    object-fit: cover;
-    border-bottom: 1px solid $color-border;
 }

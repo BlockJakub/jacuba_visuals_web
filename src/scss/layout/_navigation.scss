@@ -1,5 +1,62 @@
 @use '../abstracts/variables' as *;
 
+// Mobile nav styles
+@media (max-width: 767px) {
+    .site-nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: $color-surface;
+        border-bottom: 1px solid $color-border;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+        transform: translateY(-200%);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.3s, opacity 0.3s;
+        z-index: 1001;
+    }
+
+    .site-nav--open {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .site-nav__list {
+        flex-direction: column;
+        gap: 0;
+        padding: 1.2rem 0;
+    }
+
+    .site-nav__item {
+        width: 100%;
+        text-align: left;
+    }
+
+    .site-nav__link {
+        display: block;
+        width: 100%;
+        padding: 1.2rem 2rem;
+        font-size: 1.7rem;
+        border-bottom: 1px solid $color-border;
+    }
+
+    .site-header__inner {
+        position: relative;
+    }
+
+    .site-nav-toggle {
+        display: inline-flex;
+    }
+}
+
+@media (min-width: 768px) {
+    .site-nav-toggle {
+        display: none;
+    }
+}
+
 .site-nav {
     width: 100%;
 }

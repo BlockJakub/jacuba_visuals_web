@@ -1,0 +1,45 @@
+
+Přesný systém pro 1 project card
+
+Main image
+mastery
+    restaurant-main-desktop-master.psd → crop 16:9
+    restaurant-main-mobile-master.psd → crop 4:5
+exporty
+    restaurant-main-desktop-1200.webp
+    restaurant-main-desktop-960.webp
+    restaurant-main-mobile-640.webp
+    restaurant-main-mobile-375.webp
+Thumb 1
+master
+    restaurant-menu-thumb-desktop-master.psd → crop 4:3
+exporty
+    restaurant-menu-thumb-640.webp
+    restaurant-menu-thumb-480.webp
+    restaurant-menu-thumb-320.webp
+Thumb 2
+master
+    restaurant-flow-thumb-desktop-master.psd → crop 4:3
+exporty
+    restaurant-flow-thumb-640.webp
+    restaurant-flow-thumb-480.webp
+    restaurant-flow-thumb-320.webp
+To je celé
+
+Takže thumbs jsou:
+
+nové screenshots
+nové desktop thumb mastery
+crop 4:3
+bez mobile masteru, aspoň zatím
+Proč je to správně
+
+Protože:
+
+main image nese hlavní branding
+thumbs ukazují doplňkové důkazy práce
+thumbs nemají být další obří responsive projekt samy o sobě
+stránka zůstane lehčí
+Jedna věta, kterou si zapamatuj
+
+Main image má svůj master. Každý thumb má svůj vlastní master. Thumb se neřeže z hlavního masteru.
