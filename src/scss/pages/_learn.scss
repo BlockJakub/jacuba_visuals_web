@@ -1,12 +1,8 @@
 @use '../abstracts/variables' as *;
 
 .learn-page {
-    padding: 4rem 0 8rem;
+    padding: 0 0 8rem;
     background-color: $color-surface;
-
-    &__infographic {
-        padding: 0;
-    }
 
     &__image-wrap {
         margin: 0;
@@ -21,5 +17,159 @@
         display: block;
         width: 100%;
         height: auto;
+    }
+}
+
+.learn-hero {
+    padding: 6rem 0 3rem;
+
+    &__title {
+        margin-bottom: 1.2rem;
+    }
+
+    &__description {
+        max-width: 72rem;
+        margin-bottom: 0;
+        color: $color-text-muted;
+        font-size: 1.8rem;
+        line-height: 1.7;
+    }
+}
+
+
+.learn-steps {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.learn-step {
+    padding: 2.4rem;
+    border: 1px solid $color-border;
+    border-radius: $radius-large;
+    background-color: $color-surface;
+    box-shadow: $shadow-soft;
+
+    &__header {
+        margin-bottom: 1.8rem;
+    }
+
+    &__eyebrow {
+        margin-bottom: 0.8rem;
+        color: $color-primary;
+        font-size: 1.3rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        margin-bottom: 0;
+        font-size: 2.2rem;
+    }
+
+    &__content {
+        display: grid;
+        gap: 1.4rem;
+    }
+
+    &__item {
+        padding-bottom: 1.4rem;
+        border-bottom: 1px solid $color-border;
+
+        &:last-child {
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+    }
+
+    &__name {
+        margin-bottom: 0.6rem;
+        color: $color-primary;
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+    }
+
+    &__text {
+        margin-bottom: 0;
+        color: $color-text-muted;
+        line-height: 1.7;
+    }
+
+    &__list {
+        display: grid;
+        gap: 1rem;
+        margin: 0;
+        padding-left: 1.8rem;
+    }
+
+    &__list-item {
+        color: $color-text-muted;
+        line-height: 1.7;
+    }
+}
+
+.learn-next {
+    padding: 2.4rem;
+    border: 1px solid $color-border;
+    border-radius: $radius-large;
+    background-color: $color-surface;
+    box-shadow: $shadow-soft;
+
+    &__header {
+        margin-bottom: 1.8rem;
+    }
+
+    &__eyebrow {
+        margin-bottom: 0.8rem;
+        color: $color-primary;
+        font-size: 1.3rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        margin-bottom: 0;
+        font-size: 2.2rem;
+    }
+
+    &__list {
+        display: grid;
+        gap: 1rem;
+        margin: 0;
+        padding-left: 1.8rem;
+    }
+
+    &__item {
+        color: $color-text-muted;
+        line-height: 1.7;
+    }
+}
+
+@media (min-width: 768px) {
+    .learn-hero {
+        padding: 7rem 0 4rem;
+    }
+
+    .learn-steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .learn-next {
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .learn-hero {
+        padding: 8rem 0 4rem;
+    }
+
+    .learn-steps {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        align-items: start;
     }
 }
