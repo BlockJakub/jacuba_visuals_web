@@ -2,11 +2,11 @@
 @use '../abstracts/variables' as *;
 
 .infographic {
-    padding: 6rem 0;
+    padding: 3rem 0 6rem;
     background-color: $color-surface;
 
     &__header {
-        max-width: 72rem;
+        max-width: 78rem;
         margin-bottom: 3.2rem;
     }
 
@@ -22,6 +22,13 @@
     &__title {
         margin-bottom: 1.2rem;
         overflow-wrap: break-word;
+    }
+
+    &__subtitle {
+        margin-bottom: 0;
+        color: $color-text-muted;
+        font-size: 1.8rem;
+        line-height: 1.7;
     }
 
     &__text {
@@ -53,6 +60,128 @@
         margin-bottom: 0;
         color: $color-text-muted;
         font-size: 1.6rem;
+    }
+}
+
+.learn-gallery {
+    margin-block: 4rem 5rem;
+
+    &__header {
+        max-width: 72rem;
+        margin-inline: auto;
+        margin-bottom: 2.4rem;
+        text-align: center;
+    }
+
+    &__eyebrow {
+        margin-bottom: 0.8rem;
+        color: $color-primary;
+        font-size: 1.4rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        margin: 0;
+        color: $color-text-muted;
+    }
+
+    &__grid {
+        display: grid;
+        gap: 2.4rem;
+        align-items: start;
+    }
+
+    &__item {
+        display: block;
+        width: 100%;
+        padding: 1.2rem;
+        border: 0;
+        border-radius: 2rem;
+        background-color: #fff;
+        box-shadow: 0 1.2rem 3rem rgba(15, 23, 42, 0.08);
+        cursor: pointer;
+        overflow: hidden;
+        text-align: left;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+        &:hover,
+        &:focus-visible {
+            transform: translateY(-0.4rem);
+            box-shadow: 0 1.8rem 4rem rgba(15, 23, 42, 0.14);
+        }
+
+        &--portrait {
+            max-width: 76rem;
+            margin-inline: auto;
+        }
+
+        &--landscape {
+            max-width: 100%;
+        }
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        border-radius: 1.2rem;
+        object-fit: contain;
+    }
+
+    .learn-gallery {
+        &__actions {
+            display: flex;
+            justify-content: center;
+            margin-top: 2.8rem;
+        }
+
+        &__button {
+            min-width: 24rem;
+            text-align: center;
+        }
+
+        &:hover,
+        &:focus-visible {
+            background-color: $color-primary-hover;
+            transition: all $transition;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .infographic {
+        padding: 4rem 0 8rem;
+    }
+
+    .learn-gallery {
+        &__grid {
+            grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+            gap: 2rem;
+        }
+
+        &__item {
+            height: auto;
+            align-self: start;
+        }
+
+        &__item--portrait {
+            max-width: none;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .learn-gallery {
+        &__grid {
+            gap: 3rem;
+        }
     }
 }
 

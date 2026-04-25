@@ -6,3 +6,17 @@ ME OTAZKY A NAPADY A CO AJ JAK JESTE UDELAT VYLEPSIT
 
 2. Mam pak vsechny images paths zmenit na links az to bude cele na github (myslim tim images jsou na github src/assets/images ale kdyz mluvime i o dist/ folder) tak co mam delat???
 
+3. PROC LOGO V NAVBAR MA NEKDY MODRY RAMECEK? TO NECHCI!!
+
+4. V base/_base.scss neni 62.5% pro font size. Proc? Potrebuji v projektu mit jednocuchou matematiku.!!!
+
+5. ZKONTROLOVAT VSECHNY alt="" description a jak pojmenovat image files podle CEO??
+
+
+6. ZKONTROLOVAT <meta> na kazde strance(jestli jsou odpovidajici a jestli jsou spravne a jestli nic nechybi).
+
+7. ZKONTROLOVAT vsechny scss files jestli jsou vsechny selectors spravne a jestli se neopakuji(dry-code) Pokud je neco co se nepouziva smazat. Pokud je neco na nespravnem miste premistit tam kam to patri.
+
+8. UPRAVIT snippets files in snippets/ folder. Je potreba nebo neni potreba?
+
+9. VE COMPONENTS/ BYL FILE _contact-blocks.scss my jsme ho prejmenovali na neco nevim co. Na Github responsive-images-learn-page branch tento file stale je. Tak ze dnes 25/04/2026 zakladam dalsi branch empty-space-images(kde bude ulozeno dnesek).

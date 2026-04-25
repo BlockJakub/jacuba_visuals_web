@@ -1,112 +1,50 @@
 @use '../abstracts/variables' as *;
 
 .hero {
-    padding: 6rem 0;
-}
+    padding: 8rem 0;
+    background: #f8f9fb;
 
-.hero__inner {
-    display: grid;
-    gap: 3.2rem;
-}
-
-.hero__content {
-    max-width: 68rem;
-}
-
-.hero__eyebrow {
-    margin-bottom: 1.2rem;
-    color: $color-primary;
-    font-size: 1.4rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-}
-
-.hero__title {
-    max-width: 10ch;
-}
-
-@media (min-width: 768px) {
-    .hero__title {
-        max-width: 12ch;
-    }
-}
-
-.hero__text {
-    max-width: 58rem;
-    margin-bottom: 0;
-    color: $color-text-muted;
-    font-size: 1.8rem;
-}
-
-.hero__actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.2rem;
-    margin-top: 2.4rem;
-}
-
-.hero__proof {
-    padding: 2.4rem;
-    border: 1px solid $color-border;
-    border-radius: $radius-large;
-    background-color: $color-surface;
-    box-shadow: $shadow-soft;
-}
-
-.hero__proof-title {
-    margin-bottom: 1.8rem;
-    font-size: 1.7rem;
-    font-weight: 700;
-    color: $color-black;
-}
-
-.hero__proof-list {
-    display: grid;
-    gap: 1.2rem;
-}
-
-.hero__proof-item {
-    position: relative;
-    padding-left: 2.4rem;
-    margin-bottom: 0;
-    color: $color-text;
-}
-
-.hero__proof-item::before {
-    content: '';
-    position: absolute;
-    top: 0.9rem;
-    left: 0;
-    width: 0.8rem;
-    height: 0.8rem;
-    border-radius: 50%;
-    background-color: $color-primary;
-}
-
-@media (min-width: 768px) {
-    .hero {
-        padding: 8rem 0 9rem;
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        align-items: center;
+        gap: 6rem;
     }
 
-    .hero__actions {
+    &__content {
+        max-width: 56rem;
+    }
+
+    &__actions {
+        display: flex;
+        gap: 1.6rem;
         margin-top: 3rem;
     }
 
-    .hero__proof {
-        max-width: 52rem;
+    &__media {
+        position: relative;
+        border-radius: 2rem;
+        overflow: hidden;
+        box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.15);
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
     }
 }
 
-@media (min-width: 1024px) {
-    .hero__inner {
-        grid-template-columns: minmax(0, 1.6fr) minmax(28rem, 0.9fr);
-        align-items: center;
-        gap: 4.8rem;
-    }
 
-    .hero__proof {
-        justify-self: end;
-        width: 100%;
+@media (max-width: 900px) {
+    .hero {
+        &__container {
+            grid-template-columns: 1fr;
+        }
+
+        &__media {
+            order: -1;
+        }
     }
 }

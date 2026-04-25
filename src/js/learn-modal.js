@@ -179,9 +179,8 @@ document.addEventListener('DOMContentLoaded', () => {
         modalImage.style.transition = 'transform 0.2s ease';
     }
 
-    galleryItems.forEach((item) => {
+    galleryItems.forEach((item, index) => {
         item.addEventListener('click', () => {
-            const index = Number(item.dataset.slide);
             openModal(index, item);
         });
     });

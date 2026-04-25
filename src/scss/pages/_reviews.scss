@@ -2,6 +2,19 @@
 
 .reviews-main {
     background-color: $color-bg;
+
+    &__visual {
+        max-width: 34rem;
+        margin: 3rem 0 4rem;
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: $radius-large;
+        box-shadow: $shadow-soft;
+    }
 }
 
 .reviews-page-grid {

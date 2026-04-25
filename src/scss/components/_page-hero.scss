@@ -1,37 +1,55 @@
 @use '../abstracts/variables' as *;
 
 .page-hero {
-    padding: 6rem 0 4rem;
-    background-color: $color-surface;
+    padding: 6rem 0;
+
+    &__inner {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    &__content {
+        max-width: 72rem;
+    }
+
+    &__eyebrow {
+        margin-bottom: 1rem;
+        color: $color-primary;
+        font-size: 1.4rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        margin-bottom: 1.6rem;
+        overflow-wrap: break-word;
+    }
+
+    &__text {
+        margin-bottom: 0;
+        color: $color-text-muted;
+        font-size: 1.8rem;
+        overflow-wrap: break-word;
+    }
+
+    &__media {
+        img {
+            display: block;
+            width: 100%;
+            border-radius: $radius-large;
+        }
+    }
 }
 
-.page-hero__content {
-    max-width: 72rem;
-}
-
-.page-hero__eyebrow {
-    margin-bottom: 1rem;
-    color: $color-primary;
-    font-size: 1.4rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-}
-
-.page-hero__title {
-    margin-bottom: 1.6rem;
-    overflow-wrap: break-word;
-}
-
-.page-hero__text {
-    margin-bottom: 0;
-    color: $color-text-muted;
-    font-size: 1.8rem;
-    overflow-wrap: break-word;
-}
-
-@media (min-width: 768px) {
+@media (min-width: 900px) {
     .page-hero {
         padding: 8rem 0 5rem;
+
+        &__inner {
+            grid-template-columns: 1.1fr 1fr;
+        }
     }
 }

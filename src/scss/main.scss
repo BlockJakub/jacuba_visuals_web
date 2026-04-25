@@ -18,9 +18,11 @@
 @use 'components/hero';
 @use 'components/page-hero';
 @use 'components/section-heading';
+@use 'components/back-to-top';
 @use 'components/testimonials';
 @use 'components/project-card';
-@use 'components/contact-block';
+@use 'components/about-preview';
+@use 'components/_final-cta.scss';
 @use 'components/infographic';
 @use 'components/learn-modal';
 
@@ -30,4 +32,5 @@
 @use 'pages/reviews';
 @use 'pages/about';
 @use 'pages/learn';
+@use 'pages/infographics';
 @use 'pages/contact';

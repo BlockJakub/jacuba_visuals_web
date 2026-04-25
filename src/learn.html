@@ -50,7 +50,7 @@
                 <nav class="site-nav" id="main-nav" aria-label="Main navigation">
                     <ul class="site-nav__list" role="list">
                         <li class="site-nav__item">
-                            <a class="site-nav__link" href="index.html" aria-current="page">Home</a>
+                            <a class="site-nav__link" href="index.html">Home</a>
                         </li>
                         <li class="site-nav__item">
                             <a class="site-nav__link" href="services.html">Services</a>
@@ -65,7 +65,7 @@
                             <a class="site-nav__link" href="about.html">About</a>
                         </li>
                         <li class="site-nav__item site-nav__item--desktop-only">
-                            <a class="site-nav__link" href="learn.html">Learn</a>
+                            <a class="site-nav__link" href="learn.html" aria-current="page">Learn</a>
                         </li>
                         <li class="site-nav__item">
                             <a class="site-nav__link" href="contact.html">Contact</a>
@@ -213,19 +213,26 @@
                     </header>
 
                     <div class="learn-gallery__grid">
-                        <button class="learn-gallery__item learn-gallery__item--portrait" type="button" data-slide="0"
+                        <button class="learn-gallery__item learn-gallery__item--portrait" type="button"
                             aria-label="Open HTML5 semantic infographic">
                             <img class="learn-gallery__image" src="assets/images/learn/HTML5-semantic.png"
                                 alt="Infographic showing HTML5 semantic structure" width="1024" height="1536"
                                 loading="lazy">
                         </button>
 
-                        <button class="learn-gallery__item" type="button" data-slide="1"
+                        <button class="learn-gallery__item learn-gallery__item--landscape" type="button"
                             aria-label="Open HTML and CSS infographic">
                             <img class="learn-gallery__image" src="assets/images/learn/HTML5-Semantic-CSS.png"
                                 alt="Infographic showing HTML5 semantic structure and CSS basics" width="1600"
                                 height="900" loading="lazy">
                         </button>
+                    </div>
+
+                    <!--   Button see more infographics      -->
+                    <div class="learn-gallery__actions">
+                        <a class="button button--primary learn-gallery__button" href="infographics.html">
+                            See More Infographics
+                        </a>
                     </div>
                     <!--   -------------------- MODALS --------------------------------------    -->
 
@@ -392,11 +399,14 @@
         </div>
     </footer>
 
-
+    <button class="back-to-top" type="button" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
 
     <script src="js/nav-toggle.js"></script>
     <script src="js/smooth-scroll.js"></script>
     <script src="js/learn-modal.js"></script>
+    <script src="js/back-to-top.js"></script>
 </body>
 
 </html>

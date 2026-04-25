@@ -11,19 +11,25 @@
     border-radius: $radius-large;
     background-color: $color-surface;
     box-shadow: $shadow-soft;
-}
+    transition: box-shadow $transition-default, transform $transition-default;
 
-.review-card__text {
-    margin-bottom: 1.8rem;
-    color: $color-text;
-    font-size: 1.7rem;
-}
+    &:hover {
+        box-shadow: $shadow-medium;
+        transform: translateY(-0.3rem);
+    }
 
-.review-card__meta {
-    margin-bottom: 0;
-    color: $color-text-muted;
-    font-size: 1.4rem;
-    font-weight: 700;
+    &__text {
+        margin-bottom: 1.8rem;
+        color: $color-text;
+        font-size: 1.7rem;
+    }
+
+    &__meta {
+        margin-bottom: 0;
+        color: $color-text-muted;
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
 }
 
 .reviews-preview__actions {

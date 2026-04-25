@@ -1,0 +1,67 @@
+@use '../abstracts/variables' as *;
+
+.final-cta {
+    &__box {
+        padding: 4.8rem 3.2rem;
+        border: 1px solid $color-border;
+        border-radius: $radius-large;
+        background-color: $color-surface;
+        box-shadow: $shadow-soft;
+        text-align: center;
+    }
+
+    &__media {
+        max-width: 42rem;
+        margin: 1.8rem auto 2rem;
+        opacity: 0.9;
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: $radius-medium;
+    }
+
+
+
+
+
+    &__eyebrow {
+        margin-bottom: 1rem;
+        color: $color-primary;
+        font-size: 1.4rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        max-width: 18ch;
+        margin-inline: auto;
+        margin-bottom: 1.4rem;
+        overflow-wrap: break-word;
+    }
+
+    &__text {
+        max-width: 62rem;
+        margin: 0 auto;
+        color: $color-text-muted;
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.2rem;
+        margin-top: 2.4rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .final-cta {
+        &__box {
+            padding: 4.8rem 3.2rem;
+        }
+    }
+}
