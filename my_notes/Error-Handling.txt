@@ -1,0 +1,41 @@
+
+==========================================
+Custom Error Pages ---> Error Handling
+==========================================
+
+
+V angličtině se pro tuto činnost nejčastěji používá termín Custom Error Pages (vlastní chybové stránky). Pokud mluvíš o procesu jejich vytváření nebo nastavení, existuje několik způsobů, jak to pojmenovat podle kontextu:
+
+1. Nejpoužívanější termíny
+
+*   Custom Error Pages: Označení pro samotné stránky, které nejsou ty základní "systémové" od prohlížeče nebo serveru.
+
+*   Error Handling: (Zpracování chyb) – Tento termín je techničtější a zahrnuje celkovou logiku toho, co se stane, když nastane chyba (např. přesměrování na správnou stránku).
+
+*   Customizing Error Responses: Pokud mluvíš o nastavování toho, jak server odpovídá na chyby.
+
+
+2. Jak to použít ve větě
+V profesionálním prostředí nebo při studiu vývoje se ti budou hodit tyto fráze:
+
+*   "I am setting up custom error pages for the project." (Nastavuji vlastní chybové stránky pro projekt.)
+
+*   "I need to design a 404 page." (Potřebuji navrhnout stránku 404.)
+
+*   "We are implementing error handling for 404 and 500 status codes." (Implementujeme zpracování chyb pro stavové kódy 404 a 500.)
+
+
+
+3. Technické rozdělení (HTTP Status Codes)
+    - Pro tvůj rozvoj v oblasti developmentu je dobré vědět, že se tyto chyby dělí do kategorií:
+    
+    Kategorie      Anglický název            Příklad
+    4xx            Client Error Codes      404 Not Found (Stránka neexistuje)
+    5xx            Server Error Codes      500 Internal Server Error (Chyba na straně serveru)
+    
+    Poznámka: Ve tvém dotazu jsi zmínil "505". Tato chyba (HTTP Version Not Supported) je poměrně vzácná. V praxi se nejčastěji setkáš s 500 (obecná chyba serveru) nebo 503 (služba nedostupná/údržba).
+    
+    
+    Jak to nastavit? (Stručný přehled)
+    
+    *   Apache server: Používá se soubor .htaccess a příkaz ErrorDocument 404 /error404.html.*   Nginx server: Používá se konfigurační soubor a direktiva error_page 404 /404.html;.*   Frameworky (React, Next.js, atd.): Často mají specifické soubory (např. 404.js nebo error.js), které chybu automaticky zachytí.

@@ -1,0 +1,21 @@
+LOCAL (XAMPP):
+
+ErrorDocument 404 /jacubavisualsweb/404.html
+ErrorDocument 403 /jacubavisualsweb/403.html
+ErrorDocument 500 /jacubavisualsweb/500.html
+
+RewriteEngine On
+RewriteRule ^test-403$ - [F,L]
+RewriteRule ^test-500$ - [R=500,L]
+
+
+PRODUCTION (HOSTING):
+
+ErrorDocument 404 /404.html
+ErrorDocument 403 /403.html
+ErrorDocument 500 /500.html
+
+
+IMPORTANT:
+
+GitHub Pages ignores .htaccess

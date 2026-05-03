@@ -1,0 +1,198 @@
+@use 'abstracts/variables' as *;
+
+/* ==========================================================================
+   ERROR PAGES
+   Reusable layout for 404, 403, 500 and maintenance pages.
+   ========================================================================== */
+
+.error-page {
+    min-height: 70vh;
+    padding: 8rem 0 6rem;
+    background:
+        radial-gradient(circle at top left, rgba(59, 130, 246, 0.12), transparent 32rem),
+        linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+
+    &__section {
+        width: 100%;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(18rem, 28rem);
+        align-items: center;
+        gap: 4rem;
+    }
+
+    &__content {
+        max-width: 42rem;
+    }
+
+    &__eyebrow {
+        margin-bottom: 1rem;
+        color: #2563eb;
+        font-size: 0.875rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        margin-bottom: 1.25rem;
+        color: #0f172a;
+        font-size: clamp(2.5rem, 6vw, 5rem);
+        line-height: 1;
+        letter-spacing: -0.04em;
+    }
+
+    &__text {
+        max-width: 36rem;
+        margin-bottom: 2rem;
+        color: #475569;
+        font-size: 1.125rem;
+        line-height: 1.7;
+    }
+
+    &__actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    &__suggestions {
+        margin-top: 2rem;
+    }
+
+    &__suggestions-title {
+        margin-bottom: 1rem;
+        color: #0f172a;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    &__suggestions-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.75rem;
+        max-width: 28rem;
+    }
+
+    &__suggestions-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.875rem 1rem;
+        border: 1px solid rgba(15, 23, 42, 0.12);
+        border-radius: 0.875rem;
+        background-color: #ffffff;
+        color: #0f172a;
+        font-size: 0.95rem;
+        font-weight: 700;
+        text-decoration: none;
+        box-shadow: 0 0.75rem 1.5rem rgba(15, 23, 42, 0.06);
+        transition:
+            transform 0.2s ease,
+            border-color 0.2s ease,
+            box-shadow 0.2s ease,
+            color 0.2s ease;
+
+        &::after {
+            content: "→";
+            color: #2563eb;
+            font-weight: 700;
+        }
+
+        &:hover,
+        &:focus-visible {
+            transform: translateY(-0.125rem);
+            border-color: rgba(37, 99, 235, 0.35);
+            color: #2563eb;
+            box-shadow: 0 1rem 2rem rgba(15, 23, 42, 0.1);
+        }
+
+        &:focus-visible {
+            outline: 3px solid rgba(37, 99, 235, 0.3);
+            outline-offset: 3px;
+        }
+    }
+
+    &__button {
+        min-width: 11rem;
+        justify-content: center;
+    }
+
+    &__visual {
+        display: flex;
+        justify-content: center;
+        color: #1e3a8a;
+    }
+
+    &__svg {
+        width: min(100%, 28rem);
+        height: auto;
+        filter: drop-shadow(0 1.5rem 2rem rgba(15, 23, 42, 0.12));
+    }
+
+    &__questions {
+        color: #ef4444;
+    }
+}
+
+/* ==========================================================================
+   RESPONSIVE ERROR PAGE
+   ========================================================================== */
+
+@media (max-width: 56.25em) {
+    .error-page {
+        padding: 6rem 0 5rem;
+
+        &__suggestions-list {
+            margin-inline: auto;
+        }
+
+        &__container {
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            text-align: center;
+        }
+
+        &__content {
+            max-width: 100%;
+            margin-inline: auto;
+        }
+
+        &__text {
+            margin-inline: auto;
+        }
+
+        &__actions {
+            justify-content: center;
+        }
+
+        &__visual {
+            order: -1;
+        }
+
+        &__svg {
+            width: min(100%, 20rem);
+        }
+    }
+}
+
+@media (max-width: 37.5em) {
+    .error-page {
+        padding: 5rem 0 4rem;
+
+        &__actions {
+            flex-direction: column;
+        }
+
+        &__button {
+            width: 100%;
+        }
+
+        &__suggestions-list {
+            grid-template-columns: 1fr;
+            max-width: 100%;
+        }
+    }
+}

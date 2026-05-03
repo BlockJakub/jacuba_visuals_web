@@ -28,16 +28,26 @@
     <meta name="twitter:image" content="https://your-domain-example.com/assets/images/og-image.jpg" />
 
     <link rel="icon" href="assets/favicons/favicon-jacubavisualsweb.svg" />
-    <link rel="stylesheet" href="../dist/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
     <header class="site-header">
         <div class="container">
             <div class="site-header__inner">
-                <a class="site-header__logo" href="index.html">Jacuba Visuals Web</a>
+                <a class="site-header__logo" href="index.html">
+                    <img src="assets/images/Logo-jacubavisualsweb.svg" alt="Jacuba Visuals Web logo" width="220"
+                        height="60" />
+                </a>
 
-                <nav class="site-nav" aria-label="Main navigation">
+                <button class="site-nav-toggle" aria-label="Open navigation" aria-controls="main-nav"
+                    aria-expanded="false">
+                    <span class="site-nav-toggle__bar"></span>
+                    <span class="site-nav-toggle__bar"></span>
+                    <span class="site-nav-toggle__bar"></span>
+                </button>
+
+                <nav class="site-nav" id="main-nav" aria-label="Main navigation">
                     <ul class="site-nav__list" role="list">
                         <li class="site-nav__item">
                             <a class="site-nav__link" href="index.html">Home</a>
@@ -53,6 +63,9 @@
                         </li>
                         <li class="site-nav__item">
                             <a class="site-nav__link" href="about.html">About</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="learn.html">Learn</a>
                         </li>
                         <li class="site-nav__item">
                             <a class="site-nav__link" href="contact.html" aria-current="page">Contact</a>
@@ -180,6 +193,16 @@
             </div>
         </div>
     </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="js/nav-toggle.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/back-to-top.js"></script>
+    <script src="js/error-catch.js"></script>
+    <script src="js/error-handler.js"></script>
 </body>
 
 </html>

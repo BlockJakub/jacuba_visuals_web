@@ -28,16 +28,26 @@
     <meta name="twitter:image" content="https://your-domain-example.com/assets/images/og-image.jpg" />
 
     <link rel="icon" href="assets/favicons/favicon-jacubavisualsweb.svg" />
-    <link rel="stylesheet" href="../dist/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
     <header class="site-header">
         <div class="container">
             <div class="site-header__inner">
-                <a class="site-header__logo" href="index.html">Jacuba Visuals Web</a>
+                <a class="site-header__logo" href="index.html">
+                    <img src="assets/images/Logo-jacubavisualsweb.svg" alt="Jacuba Visuals Web logo" width="220"
+                        height="60" />
+                </a>
 
-                <nav class="site-nav" aria-label="Main navigation">
+                <button class="site-nav-toggle" aria-label="Open navigation" aria-controls="main-nav"
+                    aria-expanded="false">
+                    <span class="site-nav-toggle__bar"></span>
+                    <span class="site-nav-toggle__bar"></span>
+                    <span class="site-nav-toggle__bar"></span>
+                </button>
+
+                <nav class="site-nav" id="main-nav" aria-label="Main navigation">
                     <ul class="site-nav__list" role="list">
                         <li class="site-nav__item">
                             <a class="site-nav__link" href="index.html">Home</a>
@@ -55,6 +65,9 @@
                             <a class="site-nav__link" href="about.html">About</a>
                         </li>
                         <li class="site-nav__item">
+                            <a class="site-nav__link" href="learn.html">Learn</a>
+                        </li>
+                        <li class="site-nav__item">
                             <a class="site-nav__link" href="contact.html">Contact</a>
                         </li>
                     </ul>
@@ -69,7 +82,7 @@
         =================================================
     -->
         <section class="page-hero">
-            <div class="container">
+            <div class="container page-hero__inner">
                 <div class="page-hero__content">
                     <p class="page-hero__eyebrow">Portfolio</p>
                     <h1 class="page-hero__title">Selected Web Projects and Build Examples</h1>
@@ -77,6 +90,10 @@
                         A selection of projects and concept builds that show responsive structure, practical layout
                         thinking and clearer business presentation.
                     </p>
+                </div>
+
+                <div class="page-hero__media" aria-hidden="true">
+                    <img src="assets/images/decoration/decorative-image-2.png" alt="" loading="lazy">
                 </div>
             </div>
         </section>
@@ -98,53 +115,157 @@
                 </div>
 
                 <div class="portfolio-grid">
+
+                    <!-- =========================================================
+                 RESTAURANT HALAMINA PROJECT
+            ========================================================== -->
                     <article class="portfolio-item">
-                        <img class="portfolio-item__image"
-                            src="assets/images/work-examples/project-halamina-restaurant-1.png"
-                            alt="Restaurant website homepage project example" loading="lazy" width="1200"
-                            height="800" />
+                        <div class="portfolio-item__media">
+                            <picture class="portfolio-item__main">
+                                <source media="(max-width: 430px)" srcset="
+                            assets/images/work-examples/restaurant-project/mobile/restaurant-main-mobile-320.webp 320w,
+                            assets/images/work-examples/restaurant-project/mobile/restaurant-main-mobile-640.webp 640w
+                        " sizes="100vw" type="image/webp" />
+
+                                <source media="(max-width: 569px)" srcset="
+                            assets/images/work-examples/restaurant-project/tablet/restaurant-menu-tablet-768.webp 768w,
+                            assets/images/work-examples/restaurant-project/tablet/restaurant-menu-tablet-960.webp 960w
+                        " sizes="(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 100vw" type="image/webp" />
+
+                                <source media="(min-width: 569px)" srcset="
+                            assets/images/work-examples/restaurant-project/tablet/restaurant-menu-tablet-768.webp 768w,
+                            assets/images/work-examples/restaurant-project/tablet/restaurant-menu-tablet-960.webp 960w,
+                            assets/images/work-examples/restaurant-project/desktop/restaurant-menu-desktop-1200.webp 1200w,
+                            assets/images/work-examples/restaurant-project/desktop/restaurant-menu-desktop-1440.webp 1440w
+                        " sizes="(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 33vw" type="image/webp" />
+
+                                <img class="portfolio-item__image"
+                                    src="assets/images/work-examples/restaurant-project/desktop/restaurant-menu-desktop-1200.webp"
+                                    alt="Restaurant website project preview" loading="lazy" width="1200" height="675" />
+                            </picture>
+                        </div>
+
                         <p class="portfolio-item__label">Concept Project</p>
                         <h3 class="portfolio-item__title">Restaurant Website and Ordering Flow</h3>
                         <p class="portfolio-item__text">
                             A restaurant-focused website concept built to explore service presentation, ordering
-                            structure,
-                            booking direction and responsive user flow.
+                            structure, booking direction and responsive user flow.
                         </p>
                         <p class="portfolio-item__meta">HTML5 · SCSS · JavaScript</p>
                     </article>
 
+                    <!-- =========================================================
+                 JACUBA VISUALS WEB
+            ========================================================== -->
                     <article class="portfolio-item">
+                        <div class="portfolio-item__media">
+                            <picture class="portfolio-item__main">
+                                <!-- Mobile (no images available, fallback to tablet) -->
+                                <source media="(max-width: 430px)" srcset="
+                                    assets/images/work-examples/webdev-project/tablet/webdev-main-tablet-640.webp 640w
+                                " sizes="100vw" type="image/webp" />
+
+                                <!-- Tablet -->
+                                <source media="(max-width: 569px)" srcset="
+                                    assets/images/work-examples/webdev-project/tablet/webdev-main-tablet-640.webp 640w
+                                " sizes="(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 100vw"
+                                    type="image/webp" />
+
+                                <!-- Desktop -->
+                                <source media="(min-width: 569px)" srcset="
+                                    assets/images/work-examples/webdev-project/tablet/webdev-main-tablet-640.webp 640w,
+                                    assets/images/work-examples/webdev-project/desktop/webdev-main-desktop-960.webp 960w,
+                                    assets/images/work-examples/webdev-project/desktop/webdev-hero-desktop-1200.webp 1200w,
+                                    assets/images/work-examples/webdev-project/desktop/webdev-hero-desktop-1400.webp 1400w
+                                " sizes="(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 33vw" type="image/webp" />
+
+                                <img class="portfolio-item__image"
+                                    src="assets/images/work-examples/webdev-project/desktop/webdev-main-desktop-960.webp"
+                                    alt="Jacuba Visuals Web homepage preview" loading="lazy" width="960" height="540" />
+                            </picture>
+                        </div>
+
                         <p class="portfolio-item__label">Personal Build</p>
                         <h3 class="portfolio-item__title">Jacuba Visuals Web Business Website</h3>
                         <p class="portfolio-item__text">
                             A personal business website designed to present services clearly, support trust and create a
-                            stronger
-                            professional online presence.
+                            stronger professional online presence.
                         </p>
                         <p class="portfolio-item__meta">HTML5 · SCSS · JavaScript · SEO Structure</p>
                     </article>
 
+                    <!-- =========================================================
+                 REAL ESTATE LISTING LAYOUT CONCEPT
+            ========================================================== -->
                     <article class="portfolio-item">
+                        <div class="portfolio-item__media">
+                            <picture class="portfolio-item__main">
+                                <!-- Mobile (no images available, fallback to tablet) -->
+                                <source media="(max-width: 430px)" srcset="
+                                    assets/images/work-examples/property-project/mobile/property-mobile-375.webp 375w,
+                                    assets/images/work-examples/property-project/mobile/property-mobile-640.webp 640w
+                                " sizes="100vw" type="image/webp" />
+
+                                <!-- Tablet -->
+                                <source media="(max-width: 569px)" srcset="
+                                    assets/images/work-examples/property-project/tablet/property-tablet-768.webp 768w,
+                                    assets/images/work-examples/property-project/tablet/property-tablet-960.webp 960w
+                                " sizes="(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 100vw"
+                                    type="image/webp" />
+
+                                <!-- Desktop -->
+                                <source media="(min-width: 569px)" srcset="
+                                    assets/images/work-examples/property-project/tablet/property-tablet-768.webp 768w,
+                                    assets/images/work-examples/property-project/tablet/property-tablet-960.webp 960w,
+                                    assets/images/work-examples/property-project/desktop/property-main-desktop-960.webp 960w,
+                                    assets/images/work-examples/property-project/desktop/property-desktop-1200.webp 1200w,
+                                    assets/images/work-examples/property-project/desktop/property-desktop-1440.webp 1440w
+                                " sizes="(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 33vw" type="image/webp" />
+
+                                <img class="portfolio-item__image"
+                                    src="assets/images/work-examples/property-project/desktop/property-main-desktop-960.webp"
+                                    alt="Real estate listing website preview" loading="lazy" width="960" height="540" />
+                            </picture>
+                        </div>
+
                         <p class="portfolio-item__label">Build Example</p>
                         <h3 class="portfolio-item__title">Real Estate Listing Layout Concept</h3>
                         <p class="portfolio-item__text">
                             A property website example focused on clearer listing presentation, layout hierarchy and
-                            stronger
-                            visual structure for service-based browsing.
+                            stronger visual structure for service-based browsing.
                         </p>
                         <p class="portfolio-item__meta">HTML5 · SCSS · JavaScript · Layout Planning</p>
                     </article>
 
+                    <!-- =========================================================
+                 CREATIVE PORTFOLIO PRESENTATION
+            ========================================================== -->
                     <article class="portfolio-item">
+                        <div class="portfolio-item__media">
+                            <picture class="portfolio-item__main">
+                                <source media="(max-width: 767px)" srcset="
+                                assets/images/work-examples/portfolio-project/mobile/portfolio-mobile-640.webp
+                            " sizes="100vw" type="image/webp" />
+
+                                <source media="(min-width: 768px)" srcset="
+                                assets/images/work-examples/portfolio-project/tablet/portfolio-tablet-768.webp
+                            " sizes="50vw" type="image/webp" />
+
+                                <img class="portfolio-item__image"
+                                    src="assets/images/work-examples/portfolio-project/tablet/portfolio-tablet-960.webp"
+                                    alt="Creative portfolio website preview" loading="lazy" width="960" height="540" />
+                            </picture>
+                        </div>
+
                         <p class="portfolio-item__label">Portfolio Example</p>
                         <h3 class="portfolio-item__title">Creative Portfolio Presentation</h3>
                         <p class="portfolio-item__text">
                             A portfolio-style layout intended for creatives and freelancers who need to present
-                            projects,
-                            visuals and contact details more professionally.
+                            projects, visuals and contact details more professionally.
                         </p>
                         <p class="portfolio-item__meta">HTML5 · SCSS · Responsive Layout</p>
                     </article>
+
                 </div>
             </div>
         </section>
@@ -166,6 +287,11 @@
                     <h2 class="final-cta__title">
                         Need a website with clearer structure and stronger presentation?
                     </h2>
+
+                    <div class="final-cta__media" aria-hidden="true">
+                        <img class="final-cta__image" src="assets/images/decoration/decorative-image-3.png" alt=""
+                            loading="lazy">
+                    </div>
 
                     <p class="final-cta__text">
                         If these examples match the kind of direction you want for your business,
@@ -214,6 +340,16 @@
             </div>
         </div>
     </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="js/nav-toggle.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/back-to-top.js"></script>
+    <script src="js/error-catch.js"></script>
+    <script src="js/error-handler.js"></script>
 </body>
 
 </html>

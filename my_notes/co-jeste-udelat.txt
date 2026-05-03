@@ -2,7 +2,7 @@
 ME OTAZKY A NAPADY A CO AJ JAK JESTE UDELAT VYLEPSIT
 ========================================================================
 
-1.Proc mam v dist/assets a v nem zadne images? Mam ten folder dist/ upload na github? Protoze mi absolutne nefunguje style v mem projektu na github repository kdyz kliknu na URL te stranky. Na github mam images jen v src/assets/images.
+1. V navbar <nav></nav> pro mobile zobrazuje burger spatne a pak jeste close button vypada ne jak X ale jak K. OPRAVIT!!!
 
 2. Mam pak vsechny images paths zmenit na links az to bude cele na github (myslim tim images jsou na github src/assets/images ale kdyz mluvime i o dist/ folder) tak co mam delat???
 
@@ -20,3 +20,12 @@ ME OTAZKY A NAPADY A CO AJ JAK JESTE UDELAT VYLEPSIT
 8. UPRAVIT snippets files in snippets/ folder. Je potreba nebo neni potreba?
 
 9. VE COMPONENTS/ BYL FILE _contact-blocks.scss my jsme ho prejmenovali na neco nevim co. Na Github responsive-images-learn-page branch tento file stale je. Tak ze dnes 25/04/2026 zakladam dalsi branch empty-space-images(kde bude ulozeno dnesek).
+
+10. MAM PREPSAT README.md Protoze jsem vytvoril dve(jedno README-for-AI.md a druhe je pro webdevelopers.)???
+
+11. Mam udelat LAODING UI? 
+
+12. MAM UDELAT lazy-load-images.js file pro lazy load(images)?
+
+
+13. PAGE Reviews.html zkotroluj ten QR CODE jestli funguje. A pod ten QR CODE dej jeste <h3> </h3> nebo  <p></p> s textem "NAPIS REVIEW" nebo neco tak. Radeji se zeptej FRAZERA. HLAVNE TEN REVIEW BUTTON TE POSILA NA REVIW NA GOOGLE MAPS TO JE SPATNE MA TO BYT REDIRECT NA Googe byznyss ucet REVIEWS.!!!!!!!
